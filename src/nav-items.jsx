@@ -1,14 +1,32 @@
-import { Home } from "lucide-react";
-import Index from "./pages/Index.jsx";
+import { Home, Compass, User, PlusCircle } from "lucide-react";
+import Home from "./pages/Home.jsx";
+import Subreddits from "./pages/Subreddits.jsx";
+import Profile from "./pages/Profile.jsx";
+import CreatePost from "./pages/CreatePost.jsx";
 
-/**
- * Central place for defining the navigation items. Used for navigation components and routing.
- */
 export const navItems = [
   {
     title: "Home",
     to: "/",
     icon: <Home className="h-4 w-4" />,
-    page: <Index />,
+    page: <Home />,
+  },
+  {
+    title: "Subreddits",
+    to: "/subreddits",
+    icon: <Compass className="h-4 w-4" />,
+    page: <Subreddits />,
+  },
+  {
+    title: "Profile",
+    to: "/profile",
+    icon: <User className="h-4 w-4" />,
+    page: <Profile />,
+  },
+  {
+    title: "Create Post",
+    to: "/create",
+    icon: <PlusCircle className="h-4 w-4" />,
+    page: <CreatePost />,
   },
 ];
