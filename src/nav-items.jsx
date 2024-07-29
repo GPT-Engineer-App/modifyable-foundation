@@ -1,4 +1,4 @@
-import { Home, Compass, User, PlusCircle } from "lucide-react";
+import { Home as HomeIcon, Compass, User, PlusCircle } from "lucide-react";
 import Home from "./pages/Home.jsx";
 import Subreddits from "./pages/Subreddits.jsx";
 import Profile from "./pages/Profile.jsx";
@@ -8,7 +8,7 @@ export const navItems = [
   {
     title: "Home",
     to: "/",
-    icon: <Home className="h-4 w-4" />,
+    icon: <HomeIcon className="h-4 w-4" />,
     page: <Home />,
   },
   {
